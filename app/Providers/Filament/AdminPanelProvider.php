@@ -64,6 +64,9 @@ class AdminPanelProvider extends PanelProvider
                 NavigationGroup::make()
                     ->label('Users')
                     ->icon('heroicon-o-users'),
+                NavigationGroup::make()
+                    ->label('Teams')
+                    ->icon('heroicon-o-users'),
 
             ])
             ->sidebarCollapsibleOnDesktop();

@@ -18,6 +18,7 @@ class TeamInvitationResource extends Resource
     protected static ?string $model = TeamInvitation::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationGroup = 'Teams';
 
     public static function form(Form $form): Form
     {
