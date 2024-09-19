@@ -9,6 +9,7 @@ export default {
         './vendor/laravel/jetstream/**/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
+        'node_modules/preline/dist/*.js',
     ],
 
     theme: {
@@ -19,9 +20,13 @@ export default {
         },
     },
 
-    plugins: [forms, typography, require("daisyui")],
+    plugins: [
+        forms, typography,
+        require("daisyui"),
+        require('preline/plugin'),
+    ],
 
     daisyui: {
-        themes: true
+        themes: false
     }
 };
